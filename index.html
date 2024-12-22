@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Calculator </h1>
+    <div class="calculatorBody">
+        <div class="calculationPart">
+            <p id="expression"> </p>
+        </div>
+
+        <div class="buttonContainer">
+            <div class="row"> 
+                <button class="operators" id="+" onclick="appendToExpression('+')"> + </button>
+                <button class="numbers" id="7" onclick="appendToExpression('7')"> 7 </button>
+                <button class="numbers" id="8" onclick="appendToExpression('8')"> 8 </button>
+                <button class="numbers" id="9" onclick="appendToExpression('9')"> 9 </button>
+            </div>
+            <div class="row">
+                <button class="operators" id="minusSign" onclick="appendToExpression('-')"> - </button>
+                <button class="numbers" id="4" onclick="appendToExpression('4')"> 4 </button>
+                <button class="numbers" id="5" onclick="appendToExpression('5')"> 5 </button>
+                <button class="numbers" id="6" onclick="appendToExpression('6')"> 6 </button>
+            </div>
+            <div class="row">
+                <button class="operators" id="multiplicationSign" onclick="appendToExpression('*')"> * </button>
+                <button class="numbers" id="1" onclick="appendToExpression('1')"> 1 </button>
+                <button class="numbers" id="2" onclick="appendToExpression('2')"> 2 </button>
+                <button class="numbers" id="3" onclick="appendToExpression('3')"> 3 </button>
+            </div>
+            <div class="row">
+                <button class="operators" id="divisionSign" onclick="appendToExpression('/')"> / </button>
+                <button class="numbers" id="0" onclick="appendToExpression('0')"> 0 </button>
+                <button class="operators" id="dot" onclick="appendToExpression('.')"> . </button>
+                <button class="operators" id="equals" onclick="equal()"> = </button>
+                </div>
+            <button class="operators" id="clear" onclick="clearScreen()"> C </button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

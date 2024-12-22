@@ -1,0 +1,78 @@
+html {
+    background-color:black;
+}
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size:2em;
+}
+
+h1 {
+    text-align:center;
+    color:orange;
+}
+
+.calculatorBody {
+    background-color:black;
+    margin:auto;
+    height:600px;
+    width:400px;
+    border-radius:5%;
+    border:3px solid orange;
+}
+
+.calculationPart {
+    margin-top:4%;
+    height:100px;
+    width:400px;
+    border-radius:12%;
+    background-color: #202020;
+    display:flex;
+    justify-content:center;
+}
+
+#expression {
+    color:white;
+    text-align:center;
+    justify-content:center;
+}
+
+.buttonContainer {
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+    padding:0 20px;
+    margin-top:5%;
+}
+
+.row {
+    height:fit-content;
+    width:fit-content;
+    gap:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+button {
+    border-radius:50%;
+    height:75px;
+    width:75px;
+    gap:20px;
+    border-color:transparent;
+    font-size:32px;
+}
+
+button:hover {
+    background-color:lightgray;
+}
+
+.operators {
+    background-color:orange;
+    color:white;
+}
+
+.numbers {
+    background-color:#202020;
+    color:white;
+}
